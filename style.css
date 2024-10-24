@@ -1,0 +1,199 @@
+/* CSS Reset + global tyylit */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*
+html {
+  display: flex;
+  justify-content: center;
+}
+*/
+
+body {
+  margin: 0;
+  /*
+  width: 100%;
+  max-width: 1200px;
+  */
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  background: #74ce44;
+}
+
+.header-logo {
+  padding: 0.3em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > a {
+  height: 100%;
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #050704;
+}
+
+main {
+  flex: 1;
+  font-family: "Montserrat";
+  background-image: linear-gradient(#fcfdfb00, #fcfdfbff),
+    url("./assets/Curve Line.svg");
+  background-position: 100% 100%;
+  color: #050704;
+}
+
+/* Home/main sivun tyylit */
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 48rem;
+  height: 16rem;
+  background: #555;
+  object-fit: cover;
+}
+
+.main-description {
+  font-size: 1.2rem;
+  max-width: 70ch;
+}
+
+/* Product sivun tyylit */
+
+.products-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.products-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.products-banner {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  height: 16rem;
+}
+
+.products-description {
+  font-size: 1.4rem;
+  margin: 1em 0;
+}
+
+.products-listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.products-listing-item {
+  display: grid;
+  gap: 1em;
+  background: #a8e688;
+  padding: 1em;
+}
+
+.products-listing-item-title {
+  font-size: 1.6rem;
+}
+
+.products-listing-item-image {
+  display: flex;
+  width: 100%;
+  object-fit: contain;
+}
+
+.products-listing-item-note {
+  display: flex;
+  color: #333;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.products-listing-item-description {
+  font-size: 1.4rem;
+}
+
+/* Contact sivun tyylit */
+
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-content-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: max-content;
+}
+
+.contact-content-info > h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.contact-content-info > p {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.contact-content-info a {
+  font-weight: bold;
+}
+
+.contact-content > iframe {
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  min-height: 400px;
+}

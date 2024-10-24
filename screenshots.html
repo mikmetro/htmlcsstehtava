@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <style>
+        p {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5em 2em;
+        }
+
+        p>span {
+            font-size: 1.5rem;
+        }
+
+        img {
+            outline: 2px solid red;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Font</h2>
+    <p>Font is from <a href="https://fonts.google.com/specimen/Montserrat">Google Fonts. Name: Whatever</a></p>
+    <pre>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+    .example-class {
+        font-family: "Montserrat";
+    }
+    </pre>
+    <h2>Validation</h2>
+    <p>
+        <span>Home page</span>
+        <span>Product page</span>
+        <span>Contact page</span>
+        <img src="assets/screenshots/homepage_validator.png" alt="valid">
+        <img src="assets/screenshots/productpage_validator.png" alt="valid">
+        <img src="assets/screenshots/aboutpage_validator.png" alt="valid">
+    </p>
+    <h2>Lighthouse</h2>
+    <p>
+        <span>Home page</span>
+        <span>Product page</span>
+        <span>Contact page</span>
+        <img src="assets/screenshots/homepage_lighthouse.png" alt="Lighthouse">
+        <img src="assets/screenshots/productpage_lighthouse.png" alt="Lighthouse">
+        <img src="assets/screenshots/aboutpage_lighthouse.png" alt="Lighthouse">
+    </p>
+    <h2>Contrast</h2>
+    <p>
+        <span>Home page</span>
+        <span>Product page</span>
+        <span>Contact page</span>
+        <img src="assets/screenshots/homepage_contrast.png" alt="contrast">
+        <img src="assets/screenshots/productpage_contrast.png" alt="contrast">
+        <img src="assets/screenshots/aboutpage_contrast.png" alt="contrast">
+    </p>
+
+</body>
+
+</html>
